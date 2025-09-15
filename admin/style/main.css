@@ -1,0 +1,76 @@
+/* @import '../../css/font.css'; */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+}
+
+boby {
+     scroll-behavior: smooth;
+     color: #fff;
+}
+
+.mb-20 {
+     margin-bottom: 20px;
+}
+
+.mt-20 {
+     margin-top: 20px;
+}
+
+.side-menu {
+     float: left;
+     width: 15%;
+     height: 100vh;
+     background-color: #05062c;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #fff;
+}
+
+.container {
+     width: 85%;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     white-space: nowrap;
+     overflow: auto;
+     background-color: #0d0f3b !important;
+}
+
+.main-div {
+     text-align: center;
+}
+
+.main-div ul {
+     display: inline;
+}
+
+.main-div ul li {
+     list-style: none;
+     font-family: Poppins;
+     font-size: 18px;
+     padding: 10px 20px;
+     cursor: pointer;
+}
+
+h1 {
+     font-size: 25px;
+     font-family: Poppins;
+}
+
+.active {
+     color: teal !important;
+}
+
+a {
+     text-decoration: none;
+     font-family: Poppins;
+     color: #fff;
+     font-size: 18px;
+     padding: 10px 20px;
+     cursor: pointer;
+}

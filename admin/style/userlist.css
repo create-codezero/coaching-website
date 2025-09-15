@@ -1,0 +1,81 @@
+/* @import '../../css/font.css'; */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+}
+
+.table-container {
+     height: 500px;
+     overflow: auto;
+     white-space: nowrap;
+     margin: 0;
+     padding: 0;
+}
+
+table {
+     text-align: center;
+     margin: 0;
+     padding: 0;
+}
+
+tr {
+     border-bottom: 1px solid slategrey;
+     padding: 0;
+     text-align: center;
+}
+
+thead {
+     background-color: #000055;
+     color: #fff;
+     font-family: Poppins;
+     font-size: 20px;
+}
+
+
+thead tr th {
+     padding: 10px;
+     width: 150px;
+     border: none;
+}
+
+tbody tr td {
+     color: #000;
+     font-family: Poppins;
+     font-size: 15px;
+     padding: 10px;
+     border: none;
+}
+
+tbody tr {
+     background-color: #fff;
+}
+
+tbody tr:nth-of-type(even) {
+     background-color: #f3f3f3 !important;
+}
+
+tbody tr:hover {
+     background-color: #ecebeb;
+
+}
+
+.btn {
+     padding: 5px 20px;
+     border-radius: 5px;
+     border: none;
+     font-family: Poppins;
+}
+
+.btn-orange {
+     background-color: #ffa500;
+     font-size: 20px;
+     color: #fff;
+}
+
+.btn-danger {
+     background-color: #ff0000;
+     font-size: 20px;
+     color: #fff;
+}

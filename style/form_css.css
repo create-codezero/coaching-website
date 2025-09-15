@@ -1,0 +1,72 @@
+.form-card {
+     padding: 20px 20px;
+     max-width: 600px;
+     width: 600px;
+     font-family: Nunito;
+     text-align: center;
+     border: none;
+     background-color: rgb(247, 247, 247);
+     transition: 1s;
+     box-shadow: 1px 1px 15px 2px #00000067;
+     border-radius: 5px;
+     margin: 40px 0;
+}
+
+.form-card>h1 {
+     font-size: 25px;
+     font-family: Rubik;
+     font-weight: 500;
+     margin-bottom: 20px;
+}
+
+.form-card .input {
+     display: block;
+     width: auto;
+     border: 1px solid #000;
+     margin-bottom: 10px;
+     border-radius: 300px;
+}
+
+.form-card .textarea {
+     display: block;
+     width: auto;
+     border: 1px solid #000;
+     border-radius: 10px;
+}
+
+.form-card>label {
+     font-size: 17px;
+     font-weight: 500;
+}
+
+.form-card .input input {
+     background-color: transparent;
+     border: none;
+     outline: none;
+     font-size: 18px;
+     padding: 7px 10px;
+     font-family: Nunito;
+     color: #000;
+     width: 95%;
+}
+
+.form-card .textarea textarea {
+     background-color: transparent;
+     border: none;
+     outline: none;
+     font-size: 20px;
+     padding: 5px 10px;
+     font-family: Nunito;
+     color: #000;
+     width: 95%;
+}
+
+@media only screen and (max-width:650px) {
+     .form-card {
+          width: 85%;
+     }
+
+     .pop {
+          width: 100%;
+     }
+}

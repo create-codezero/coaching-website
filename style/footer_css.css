@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+     /* font-family: 'Montserrat',
+          sans-serif; */
+     color: #00000c;
+}
+
+.f-c {
+     display: flex;
+     border-top: 1px solid #00000c;
+     justify-content: space-evenly;
+     align-items: center;
+     background-color: #fcfcfc;
+     max-width: 1500px;
+     padding: 10px;
+     font-family: 'Montserrat',
+          sans-serif;
+}
+
+.f-c .f-d {
+     max-width: 350px;
+     width: 100%;
+     padding: 0 20px;
+     justify-content: center;
+}
+
+.f-c .f-d header {
+     height: 50px;
+     font-size: 30px;
+     font-weight: 700;
+}
+
+.f-c .f-d h1 {
+     font-size: 20px;
+     font-weight: 700;
+     color: #00004b;
+}
+
+.f-c .f-d p {
+     font-size: 14px;
+}
+
+.f-c .f-d h1 i {
+     color: #7cfc00;
+}
+
+.f-c .f-d .f-d-c {
+     margin-bottom: 10px;
+}
+
+.f-c .f-d a {
+     line-height: 30px;
+     font-size: 18px;
+     text-decoration: none;
+     width: max-content;
+     display: table;
+     color: #4f9c01;
+}
+
+.f-c .f-d a:hover {
+     color: #7cfc00;
+}
+
+.f-c .f-d-s a {
+     color: #7cfc00;
+}
+
+.f-c .f-d .f-d-i {
+     display: flex;
+     background-color: #7cfc00;
+     padding: 2px 5px;
+     justify-content: center;
+     align-items: center;
+     font-size: 20px;
+     width: max-content;
+     border-radius: 5px;
+}
+
+.f-c .f-d .f-d-i input {
+     border: none;
+     background: transparent;
+     outline: none;
+     font-size: 18px;
+     color: #00000c;
+     text-indent: 5px;
+}
+
+.f-c .f-d .f-d-i i {
+     padding: 5px 5px;
+}
+
+.f-c .f-d .f-d-s {
+     display: flex;
+     width: max-content;
+}
+
+.f-c .f-d .f-d-i button {
+     padding: 0;
+     margin: 0;
+     background-color: transparent;
+     border: none;
+     font-size: 18px;
+     border-bottom-right-radius: 5px;
+     border-top-right-radius: 5px;
+     outline: none;
+}
+
+.f-c .f-d .f-d-s a {
+     padding: 3px 10px;
+     font-size: 18px;
+     border-radius: 5px;
+     margin: 10px 5px;
+     background-color: #00000c;
+}
+
+.f-c .f-d .f-d-s a:hover {
+     background-color: #7cfc00;
+}
+
+.f-c .f-d .f-d-s a:hover i {
+     color: #00000c;
+}
+
+.f-c .f-d .f-d-i button:hover {
+     background-color: #00000c;
+     cursor: pointer;
+}
+
+.f-c .f-d .f-d-i button:hover i {
+     color: #7cfc00;
+}
+
+.f-c .f-d .f-d-s a i {
+     color: #7cfc00;
+}
+
+.tx-c {
+     text-align: center;
+     margin: auto;
+}
+
+@media only screen and (max-width:1300px) {
+     .f-c {
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+     }
+
+     .f-c .f-d {
+          margin-top: 10px;
+     }
+
+     .f-c .f-d header {
+          margin-top: 7px;
+     }
+}
+
+@media only screen and (max-width:1200px) {
+     .f-c .f-d {
+          border-top: 1px solid #00000c;
+     }
+}
+
+@media only screen and (max-width:500px) {
+     .f-c .f-d {
+          padding: 0;
+     }
+}

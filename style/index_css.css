@@ -1,0 +1,251 @@
+body {
+     font-family: Nunito;
+     scroll-behavior: smooth;
+}
+
+.heading {
+     font-size: 45px;
+     font-family: Rubik;
+     color: #5f5f5f;
+     font-weight: 500px;
+}
+
+.container {
+     width: 100%;
+}
+
+.d-flex {
+     display: flex;
+}
+
+.justify-center {
+     justify-content: center;
+}
+
+.landing {
+     flex-basis: 50%;
+     height: 100vh;
+     flex: 2;
+}
+
+.landing>div {
+     width: 100%;
+     height: 100%;
+     font-family: Nunito;
+}
+
+.left-container {
+     display: flex;
+     align-items: center;
+     flex: 1;
+}
+
+.left-container>.box {
+     margin: 0 15%;
+}
+
+.right-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex: 1;
+}
+
+.right-container img {
+     height: auto;
+     pointer-events: none;
+     width: 65%;
+     cursor: not-allowed;
+}
+
+.btn {
+     padding: 10px 20px;
+     font-size: 20px;
+     background: transparent;
+     border: 1px solid #000;
+     font-family: Nunito;
+     border-radius: 300px;
+     outline: none;
+     margin: 10px 5px;
+}
+
+.btn-primary {
+     border: 1px solid blue;
+     transition: 0.5s;
+}
+
+.btn-primary:hover {
+     background-color: blue;
+     transition: 0.5s;
+     box-shadow: 1px 1px 15px 2px rgba(0, 0, 255, 0.808);
+     color: white;
+}
+
+.btn-primary a {
+     color: blue;
+     transition: 0.5s;
+}
+
+.btn-primary:hover>a {
+     color: white;
+     transition: 0.5s;
+}
+
+.btn-orange {
+     border: 1px solid orange;
+     transition: 0.5s;
+}
+
+.btn-orange:hover {
+     background-color: orange;
+     transition: 0.5s;
+     box-shadow: 1px 1px 15px 2px #ffa600ea;
+}
+
+.btn-orange a {
+     color: orange;
+     transition: 0.5s;
+}
+
+.btn-orange:hover>a {
+     color: white;
+     transition: 0.5s;
+}
+
+.btn-red {
+     border: 1px solid red;
+     transition: 0.5s;
+}
+
+.btn-red:hover {
+     background-color: red;
+     transition: 0.5s;
+     box-shadow: 1px 1px 15px 2px #ff00008f;
+}
+
+.btn-red a {
+     color: red;
+     transition: 0.5s;
+}
+
+.btn-red:hover>a {
+     color: white;
+     transition: 0.5s;
+}
+
+.btn-gray {
+     border: 1px solid gray;
+     transition: 0.5s;
+}
+
+.btn-gray:hover {
+     background-color: gray;
+     transition: 0.5s;
+     box-shadow: 1px 1px 15px 2px #00000067;
+}
+
+.btn-gray a {
+     color: gray;
+     transition: 0.5s;
+}
+
+.btn-gray:hover>a {
+     color: white;
+     transition: 0.5s;
+}
+
+
+.btn>a {
+     font-family: Nunito;
+     text-decoration: none;
+}
+
+.para {
+     color: #000;
+     font-size: 16px;
+     font-weight: 500;
+     margin: 10px 0;
+}
+
+.card-container {
+     display: grid;
+     grid-gap: 0.9rem;
+     grid-template-columns: repeat(5, auto);
+     margin: 50px 0;
+     width: 90%;
+     justify-content: center;
+}
+
+.card {
+     padding: 20px 10px;
+     max-width: 500px;
+     font-family: Nunito;
+     text-align: center;
+     border: none;
+     background-color: rgb(247, 247, 247);
+     transition: 1s;
+     border-radius: 20px;
+}
+
+.card:hover {
+     box-shadow: 1px 1px 15px 2px #00000067;
+     transform: scale(1.01);
+     transition: 1s;
+}
+
+.tx-center {
+     text-align: center;
+     display: block;
+     text-align: center;
+}
+
+@media only screen and (max-width:1200px) {
+     .card-container {
+          grid-template-columns: repeat(2, auto);
+     }
+}
+
+@media only screen and (max-width:700px) {
+     .landing {
+          flex-direction: column-reverse;
+     }
+
+     .right-container img {
+          margin: 20px 0;
+          width: 60%;
+     }
+
+     .left-container>.box {
+          margin: 0 7%;
+     }
+
+     .card-container {
+          grid-template-columns: repeat(1, auto);
+     }
+}
+
+.pop {
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     display: none;
+     transition: 1s;
+}
+
+.pop.active {
+     animation: pop 1s ease forwards;
+     display: inline;
+}
+
+@keyframes pop {
+     from {
+          opacity: 0;
+          top: 0;
+     }
+
+     to {
+          opacity: 1;
+          top: 50%;
+     }
+}

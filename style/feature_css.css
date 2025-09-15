@@ -1,0 +1,130 @@
+.container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.grid {
+     display: grid;
+     text-align: center;
+     grid-template-columns: repeat(5, auto);
+     grid-gap: 1em;
+     border: none;
+     width: 90%;
+     margin: 15px 0;
+}
+
+.grid .card {
+     max-width: 620px;
+     background-color: #fff;
+     border-radius: 5px;
+     text-align: center;
+     padding: 5px 5px;
+     transition: 0.25s;
+}
+
+.grid .card:hover {
+     transform: scale(1.03);
+     transition: 0.25s;
+     box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.308);
+}
+
+.grid .card-footer {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 5px 0;
+}
+
+.grid .card-footer .download-btn {
+     background-color: green;
+     padding: 10px 15px;
+     border: none;
+     border-radius: 5px;
+     color: #fff !important;
+}
+
+.grid .card-footer .download-btn a {
+     color: #fff !important;
+     text-decoration: none;
+     font-family: Nunito;
+     font-weight: 450;
+     font-size: 18px;
+}
+
+.grid .card-footer .like {
+     padding: 12px 10px;
+     font-size: 25px;
+     color: rgb(165, 165, 255);
+     transform: rotate(-1.5deg);
+     cursor: pointer;
+}
+
+.grid .card-footer .liked {
+     padding: 12px 10px;
+     font-size: 25px;
+     color: blue;
+     /* color: rgb(165, 165, 255); */
+     transform: rotate(-1.5deg);
+     cursor: pointer;
+}
+
+.grid .card-footer .like:hover {
+     color: rgb(77, 77, 92);
+}
+
+.grid .card-footer .dislike {
+     padding: 10px 15px;
+     font-size: 25px;
+     color: rgb(245, 177, 177);
+     transform: rotate(179deg);
+     cursor: pointer;
+}
+
+
+.img-fluid {
+     max-width: 100%;
+     height: auto;
+}
+
+.fs-16 {
+     font-size: 16px;
+     font-family: Nunito;
+     padding: 0;
+     color: #000;
+     font-weight: 600;
+}
+
+.like.blue {
+     color: blue !important;
+}
+
+.fs-10 {
+     font-size: 10px;
+     font-family: Nunito;
+     color: #8f8f8f;
+}
+
+@media only screen and (max-width:1500px) {
+     .grid {
+          grid-template-columns: repeat(4, auto);
+     }
+}
+
+@media only screen and (max-width:1300px) {
+     .grid {
+          grid-template-columns: repeat(3, auto);
+     }
+}
+
+@media only screen and (max-width:950px) {
+     .grid {
+          grid-template-columns: repeat(2, auto);
+     }
+}
+
+@media only screen and (max-width:620px) {
+     .grid {
+          grid-template-columns: repeat(1, auto);
+     }
+}
